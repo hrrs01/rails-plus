@@ -32,8 +32,6 @@ class Railtrack
 		
 	end
 	
-	
-	
 	def move_train
 		case @direction
 			when :se
@@ -126,10 +124,3 @@ class Railtrack
 	
 end
 
-r = Railtrack.new $*[0]
-x=r.move_train
-while !x.is_a?(String)
-	p x
-	x=r.move_train
-end
-p x
